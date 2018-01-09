@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-typedef stuct{
+typedef struct{
     char letter;
-    int numberOfOccurence;
-} dictionary
+    int numberOfOccurrence;
+} dictionary;
 
-dictionary[] getSortedTab(string word);
+dictionary* getSortedTab(char* word);
+
+int letterInTab(char letter, dictionary* tab, int sizeTab);
