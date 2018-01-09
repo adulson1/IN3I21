@@ -1,12 +1,7 @@
-#include "main.h"
-
+#include <stdio.h>
 int main()
 {
-    char[] string = "jean-pierre";
-    dictionary[] = getSortedTab(string)
+    printf("Hello les bgey");
+    return 0;
 }
 
-dictionary[] getSortedTab(string word)
-{
-    return 
-}
