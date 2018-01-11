@@ -10,9 +10,9 @@ content * content_alloc(int val){
     return pc;
 }
 
-//content * content_random_alloc(){
-//    return content_alloc(random_int(1,100));
-//}
+content * content_random_alloc(){
+    return content_alloc(10);
+}
 
 void content_free(content *pc){
     if(pc)
