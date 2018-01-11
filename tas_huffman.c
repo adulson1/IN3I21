@@ -27,6 +27,7 @@ int tas_huffman_get_min_node(tas_huffman * tas_huffman, int (*cmp_content)(void 
     void * i_min_content = tas_get_content(tas_huffman->tas, i_min);
 
     for(i=1; i <tas_get_capacity(tas_huffman->tas); i++){
+
         i_content = tas_get_content(tas_huffman->tas, i);
         if(content_comp(i_min_content, i_content) > 0){
             i_min = i;
