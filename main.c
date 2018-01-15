@@ -10,12 +10,19 @@ int main()
 }
 
 void test_content_print(){
-    int TAILLE = 5;
-    content** tab = (content**) malloc(5*sizeof(*content));
 
-    int i;
-    for(i=0; i<TAILLE; i++){
-        tab[i]= content_random_alloc();
-        content_print(*tab + i);
+    int i , taille1 = 2 , taille2 = 3;
+    content **ptr;
+
+    ptr = malloc(taille1 * sizeof(*ptr));
+    if(ptr == NULL){
+    //TODO
+    }
+    for(i=0 ; i < taille1 ; i++){
+        ptr[i] = content_random_alloc();
+        if(ptr[i] == NULL){
+        //TODO
+        }
+        content_print(ptr[i]);
     }
 }
