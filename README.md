@@ -7,7 +7,6 @@ tas_huffman.c, tas_huffman.h : Librarie pour la gestion de tas_huffman.
 
 ## TODO
 Général :
--transformer dictinary en content : actualiser fonction free et alloc
 -Ne pas tout mettre dans le main.c  
 
 Silvère :
